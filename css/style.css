@@ -1,0 +1,89 @@
+a{
+    text-decoration: none;
+}
+.social ul {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.social ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+.social ul li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #f3f0b4;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #666;
+    transition: 0.5s;
+}
+.social ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #0499fd;
+    transition: 0.5s;
+    transform: scale(0.9);
+    z-index: -1;
+    box-shadow: 0 0 5px #000;
+}
+.social ul li a:hover:before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px#0499fd;
+}
+.social ul li a:hover {
+    color: #0499fd;
+    box-shadow: 0 0 5px #0499fd;
+}
+
+.skill-set .container {
+    width: 100%; 
+    background-color: white;
+}
+  
+.skill {
+    text-align: right; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: white;
+}
+  
+.html {width: 90%; background-color: #04AA6D;} 
+.css {width: 90%; background-color: #2196F3;} 
+.bs {width: 70%; background-color: #f44336;} 
+.js {width: 30%; background-color: #808080;} 
+.java {width: 30%; background-color: #28ff44;} 
+.C {width: 50%; background-color: #4e41ff;} 
+
+.list ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+.list ul li{
+    margin: 0 5px;
+    padding: 0 10px;
+}
+.list ul li a{
+    font-size: 20px;
+}
+.blank{
+    content: "";
+    margin: 0;
+    padding: 0;
+}
